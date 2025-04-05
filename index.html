@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RYHARPEDIA - Digital Payment</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="toast">✓ Tersalin!</div>
+    
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <img src="images/logo.png" alt="RYHARPEDIA" class="logo">
+                <h1>Digital Payment</h1>
+            </div>
+        </header>
+
+        <!-- Konten Utama -->
+        <main class="main-content">
+            <!-- QRIS -->
+            <section class="qris-section">
+                <div class="qris-container">
+                    <img src="images/qris.jpg" alt="QRIS Code" class="qris-img">
+                </div>
+                <div class="qris-actions">
+                    <button class="btn-zoom" id="zoomBtn">
+                        <i class="fas fa-search-plus"></i> Perbesar
+                    </button>
+                    <a href="images/qris.jpg" download class="btn-download">
+                        <i class="fas fa-download"></i> Unduh
+                    </a>
+                </div>
+            </section>
+
+            <!-- Metode Pembayaran -->
+            <section class="payment-methods">
+                <div class="payment-category">
+                    <h2><i class="fas fa-wallet"></i> E-Wallet</h2>
+                                        
+                    <!-- DANA -->
+                    <div class="account-item">
+                        <div class="account-info">
+                            <span class="provider">DANA</span>
+                            <span class="number">-</span>
+                            <span class="number">A/n</span>
+                        </div>
+                        <button class="copy-btn" data-account="-">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+
+                    <!-- GOPAY -->
+                    <div class="account-item">
+                        <div class="account-info">
+                            <span class="provider">GOPAY</span>
+                            <span class="number">0823 2378 0821</span>
+                            <span class="number">A/n RAHARDIYAN YOGA PRATAMA</span>
+                        </div>
+                        <button class="copy-btn" data-account="082323780821">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- SHOOPEPAY -->
+                    <div class="account-item">
+                        <div class="account-info">
+                            <span class="provider">SHOPEEPAY</span>
+                            <span class="number">0823 2378 0821</span>
+                            <span class="number">A/n RAHARDIYAN YOGA PRATAMA</span>
+                        </div>
+                        <button class="copy-btn" data-account="082323780821">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="payment-category">
+                    <h2><i class="fas fa-university"></i> Bank Transfer</h2>
+                    
+                    <!-- SEABANK -->
+                    <div class="account-item">
+                        <div class="account-info">
+                            <span class="provider">SEABANK</span>
+                            <span class="number">9013 2433 6895</span>
+                            <span class="number">A/n RAHARDIYAN YOGA PRATAMA</span>
+                        </div>
+                        <button class="copy-btn" data-account="901324336895">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- JAGO -->
+                    <div class="account-item">
+                        <div class="account-info">
+                            <span class="provider">JAGO</span>
+                            <span class="number">1055 7243 8264</span>
+                            <span class="number">A/n RAHARDIYAN YOGA PRATAMA</span>
+                        </div>
+                        <button class="copy-btn" data-account="105572438264">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Tombol Konfirmasi -->
+        <footer class="footer">
+            <button class="whatsapp-btn" id="confirmBtn">
+                <i class="fab fa-whatsapp"></i>
+                Kirim Bukti Pembayaran
+            </button>
+        </footer>
+    </div>
+
+    <!-- Modal Konfirmasi -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <h3>Konfirmasi Pengiriman</h3>
+            <p>Apakah Anda yakin sudah melakukan pembayaran?</p>
+            <div class="modal-actions">
+                <button class="btn btn-cancel" id="cancelBtn">Batal</button>
+                <a href="https://wa.me/6282323780821" target="_blank" class="btn btn-confirm">
+                    Ya, Kirim Bukti
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
