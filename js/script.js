@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const createZoomModal = () => {
         const zoomModal = document.createElement('div');
         zoomModal.className = 'modal-zoom';
-        zoomModal.innerHTML = `<img src="images/qris.jpg" alt="QRIS Besar">`;
+        zoomModal.innerHTML = `<img src="images/QRIS-1.png" alt="QRIS Besar">`;
         
         zoomModal.addEventListener('click', () => {
             zoomModal.classList.remove('active');
